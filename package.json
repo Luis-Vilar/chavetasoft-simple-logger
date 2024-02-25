@@ -1,17 +1,21 @@
 {
   "name": "chavetasoft-logger",
   "version": "0.0.1",
-  "description": "",
-  "main": "index.js",
+  "description": "A simple logger for Node.js, Express compatible",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "build": "tsc",
-    "dev": "ts-node-dev --respawn --transpile-only --ignore-watch node_modules --no-notify src/index.ts"
+    "build": "tsc --declaration --declarationMap --sourceMap --outDir dist",
+    "dev": "ts-node-dev --respawn --transpile-only --ignore-watch node_modules --no-notify src/index.ts",
+    "testing-server": "ts-node-dev --respawn --transpile-only --ignore-watch node_modules --no-notify src/server.ts"
   },
   "keywords": [],
   "author": "Luis Vilar",
   "license": "MIT",
   "devDependencies": {
+    "@types/express": "^4.17.21",
     "@types/node": "^20.11.20",
+    "express": "^4.18.2",
     "ts-node": "^10.9.2",
     "ts-node-dev": "^2.0.0",
     "typescript": "^5.3.3"
