@@ -12,7 +12,7 @@ npm install chavetasoft-simple-logger
 ## Usage JavaScript
 ```javascript
 const express = require("express");
-const logger = require("chavetasoft-logger");
+const logger = require("chavetasoft-simple-logger");
 
 const app = express();
 app.use(logger(true));/* true Enable the file log writer, 
@@ -34,7 +34,7 @@ app.listen(3000, () => {
 ## Usage TypeScript
 ```typescript
 import express from "express";
-import logger from "chavetasoft-logger";
+import logger from "chavetasoft-simple-logger";
 
 const app = express();
 app.use(logger(true));// true Enable the file log writer, false disable the file log writer
