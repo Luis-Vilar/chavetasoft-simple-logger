@@ -7,7 +7,7 @@
   "scripts": {
     "build": "tsc --declaration --declarationMap --sourceMap --outDir dist",
     "dev": "ts-node-dev --respawn --transpile-only --ignore-watch node_modules --no-notify src/index.ts",
-    "testing-server": "ts-node-dev --respawn --transpile-only --ignore-watch node_modules --no-notify src/server.ts"
+    "publish": "npm publish --access public"
   },
   "keywords": [],
   "author": "Luis Vilar",
