@@ -1,4 +1,4 @@
-## Chavetasoft Logger
+## Chavetasoft Simple Logger
 This is a simple logger for Node.js. It has only one parameter and can enable or disable the file log writer. If you enable it, the file log will be saved in the root of the project with the name `log.json`.
 Whether the file log writer is enabled or disabled, the console log will always be enabled.
 Fast setup and easy to use, just two lines of code. 😊🚀
