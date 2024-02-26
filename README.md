@@ -16,7 +16,11 @@ const logger = require("chavetasoft-logger");
 
 const app = express();
 app.use(logger(true));/* true Enable the file log writer, 
-                         false disable the file log writer*/
+                         false Disable the file log writer.
+                         or you can use logger() without parameter
+                         to disable the file log writer as default
+                         */
+
 
 app.get("/", (req, res) => {
   res.send("Hello World");
@@ -72,4 +76,4 @@ Server is running on port 3000
 [Chavetasoft](https://luisvilar.netlify.app/)
 
 ## Version
-0.0.1
+0.0.2
