@@ -6,7 +6,7 @@ Fast setup and easy to use, just two lines of code. 😊🚀
 
 ## Installation
 ```bash
-npm install chavetasoft-logger
+npm install chavetasoft-simple-logger
 ```
 
 ## Usage JavaScript
@@ -76,4 +76,4 @@ Server is running on port 3000
 [Chavetasoft](https://luisvilar.netlify.app/)
 
 ## Version
-0.0.2
+0.0.1
