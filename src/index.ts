@@ -44,7 +44,6 @@ async function writeFile(date: Date, req: Request, res: Response) {
 function logColor(color : number, partOfLog : string) {
   return(`\x1b[${color}m${partOfLog}\x1b[0m`);
 }
-
 function setColorStatus(status: number) {
   if (status >= 200 && status < 300) {
     return 32;
@@ -70,20 +69,20 @@ function setColorVerb(verb: string) {
       return 0;
   }
 }
-
-
 function prepareLog(date: Date, req: Request, res: Response) {
   const statusColor = setColorStatus(res.statusCode);
   const verbColor = setColorVerb(req.method);
   const dateColor = 35;
   const ipColor = 34;
   const urlColor = 0;
+
   const method = logColor(verbColor, `[${req.method}]`);
   const url = logColor(urlColor, req.originalUrl);
   const dateLog = logColor(dateColor, `${date}`);
   const ip = logColor(ipColor, `[IP] ${req.ip}`);
   const status = logColor(statusColor, `[STATUS] ${res.statusCode}`);
   const log =  `${method} ${url} ${status} ${ip} ${dateLog}\n\n`;
+  
   return log;
 }
 
