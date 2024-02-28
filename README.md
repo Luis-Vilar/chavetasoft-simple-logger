@@ -16,11 +16,12 @@ const chavetasoftLogger = require("chavetasoft-simple-logger");
 
 const app = express();
 
-app.use(chavetasoftLogger()); /* true Enable the file log writer, 
-                                 false Disable the file log writer.
-                                 or you can use logger() without parameter
-                                to disable the file log writer as default
-                             */
+app.use(chavetasoftLogger(true)); /*
+true Enable the file log writer, 
+false Disable the file log writer.
+or you can use logger() without parameter
+to disable the file log writer as default
+*/
 
 
 app.get("/", (req, res) => {
@@ -39,11 +40,12 @@ import express, { Express, Request, Response } from "express";
 import chavetasoftLogger from "chavetasoft-simple-logger";
 
 const app: Express = express();
-app.use(chavetasoftLogger()); /* true Enable the file log writer, 
-                                 false Disable the file log writer.
-                                 or you can use logger() without parameter
-                                to disable the file log writer as default
-                             */
+app.use(chavetasoftLogger(true));/*
+true Enable the file log writer, 
+false Disable the file log writer.
+or you can use logger() without parameter
+to disable the file log writer as default
+*/
 
 app.get("/", (req, res) => {
   res.send("Hello World");
