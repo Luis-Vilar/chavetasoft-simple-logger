@@ -50,11 +50,8 @@ app.listen(3000, () => {
 ```
 
 ## Console Output
-```bash
-Server is running on port 3000
-[ GET ]/65758485 Sun Feb 25 2024 22:57:22 GMT-0300 (hora estándar de Brasilia) [ IP ]::ffff:127.0.0.1 [ STATUS ]404
+![Captura de pantalla 2024-02-27 a la(s) 22 21 48](https://github.com/Luis-Vilar/chavetasoft-simple-logger/assets/124309725/c57cbdaa-1831-4bf1-89ef-98b08b779e7a)
 
-```
 
 ## File Log Output
 ```json
