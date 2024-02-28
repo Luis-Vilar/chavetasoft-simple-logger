@@ -12,14 +12,15 @@ npm install chavetasoft-simple-logger
 ## Usage JavaScript
 ```javascript
 const express = require("express");
-const logger = require("chavetasoft-simple-logger");
+const chavetasoftLogger = require("chavetasoft-simple-logger");
 
 const app = express();
-app.use(logger(true));/* true Enable the file log writer, 
-                         false Disable the file log writer.
-                         or you can use logger() without parameter
-                         to disable the file log writer as default
-                         */
+
+app.use(chavetasoftLogger()); /* true Enable the file log writer, 
+                                 false Disable the file log writer.
+                                 or you can use logger() without parameter
+                                to disable the file log writer as default
+                             */
 
 
 app.get("/", (req, res) => {
@@ -32,12 +33,17 @@ app.listen(3000, () => {
 
 ```
 ## Usage TypeScript
-```typescript
-import express from "express";
-import logger from "chavetasoft-simple-logger";
+  ```typescript
 
-const app = express();
-app.use(logger(true));// true Enable the file log writer, false disable the file log writer
+import express, { Express, Request, Response } from "express";
+import chavetasoftLogger from "chavetasoft-simple-logger";
+
+const app: Express = express();
+app.use(chavetasoftLogger()); /* true Enable the file log writer, 
+                                 false Disable the file log writer.
+                                 or you can use logger() without parameter
+                                to disable the file log writer as default
+                             */
 
 app.get("/", (req, res) => {
   res.send("Hello World");
@@ -73,4 +79,4 @@ app.listen(3000, () => {
 [Chavetasoft](https://luisvilar.netlify.app/)
 
 ## Version
-0.0.3
+0.1.0
