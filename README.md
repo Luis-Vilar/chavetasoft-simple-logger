@@ -81,4 +81,4 @@ app.listen(3000, () => {
 [Chavetasoft](https://luisvilar.netlify.app/)
 
 ## Version
-0.1.0
+0.2.0
