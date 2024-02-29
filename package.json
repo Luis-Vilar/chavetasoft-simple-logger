@@ -1,6 +1,6 @@
 {
   "name": "chavetasoft-simple-logger",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A simple logger for Node.js, Express compatible",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -11,7 +11,7 @@
     "build": "tsc --declaration --declarationMap --sourceMap --outDir dist",
     "dev": "ts-node-dev --respawn --transpile-only --ignore-watch node_modules --no-notify src/index.ts",
     "publish": "npm publish --access public",
-    "test" : "echo \"Not implemented get\" && exit 0"
+    "test": "echo \"Not implemented get\" && exit 0"
   },
   "keywords": [],
   "author": "Luis Vilar",
