@@ -10,7 +10,6 @@
   "scripts": {
     "build": "tsc --declaration --declarationMap --sourceMap --outDir dist",
     "dev": "ts-node-dev --respawn --transpile-only --ignore-watch node_modules --no-notify src/index.ts",
-    "publish": "npm publish --access public",
     "test": "echo \"Not implemented get\" && exit 0"
   },
   "keywords": [],
